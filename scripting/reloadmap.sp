@@ -6,14 +6,14 @@ public Plugin myinfo =
 {
     name = "Reloadmap",
     author = "WidovV",
-    description = "ReloadMap plugin.",
+    description = "Reloadmap plugin.",
     version = "0.1",
     url = "https://github.com/WidovV"
 };
 
 public void OnPluginStart() 
 {
-        /* Reloadmap Commands          */
+        /* Reloadmap Commands */
     RegAdminCmd("sm_reloadmap", command_reloadmap, ADMFLAG_CHANGEMAP);
     RegAdminCmd("sm_rm", command_reloadmap, ADMFLAG_CHANGEMAP);
     RegAdminCmd("sm_rmap", command_reloadmap, ADMFLAG_CHANGEMAP);
