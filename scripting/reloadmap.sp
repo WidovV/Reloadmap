@@ -24,5 +24,7 @@ public Action command_reloadmap(int client, int args)
     char sMap[64];
     GetCurrentMap(sMap, 64);
 
-    ClientCommand(client, "sm_map %s", sMap);
+    ClientCommand(client, "sm_rcon changelevel %s", sMap);
+
+    return Plugin_Handled;
 }
